@@ -1,4 +1,4 @@
-export default function Main() {
+export default function ProductList() {
 
     function Card() {
         return (

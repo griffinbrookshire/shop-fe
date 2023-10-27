@@ -2,7 +2,7 @@ export default function NavBar() {
 
   function Logo() {
     return (
-      <div className="z-50 flex items-center">
+      <div className="flex items-center">
         <img src="gear.png" alt="settings" className="w-12 h-12"></img>
         <span className="ml-2">Griff & Kal LLC</span>
       </div>
@@ -20,7 +20,7 @@ export default function NavBar() {
 
   function SearchBar() {
     return (
-      <form className="flex items-center justify-evenly">
+      <form className="flex items-center">
         <label>Search</label>
         <input type="text" className="ml-2 rounded-full b-2 border-gray-500 text-gray-700 px-2 hover:bg-gray-100"></input>
       </form>
@@ -33,9 +33,8 @@ export default function NavBar() {
       <SearchBar></SearchBar>
       <ul className="flex justify-center items-center space-x-8">
         <NavItem text={'Home'}></NavItem>
-        <NavItem text={'Parts'}></NavItem>
         <NavItem text={'Orders'}></NavItem>
-        <NavItem text={'Deliveries'}></NavItem>
+        <NavItem text={'Login'}></NavItem>
       </ul>
     </nav>
   )
