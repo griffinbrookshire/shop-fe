@@ -10,10 +10,10 @@ export default function NavBar() {
     )
   }
 
-  function NavItem({text}) {
+  function NavItem({text, link = '#'}) {
     return (
       <li>
-        <a href="#" className="hover:text-gray-100">{text}</a>
+        <a href={link} className="hover:text-gray-100">{text}</a>
       </li>
     )
   }
@@ -32,9 +32,9 @@ export default function NavBar() {
       <Logo></Logo>
       <SearchBar></SearchBar>
       <ul className="flex justify-center items-center space-x-8">
-        <NavItem text={'Home'}></NavItem>
-        <NavItem text={'Orders'}></NavItem>
-        <NavItem text={'Login'}></NavItem>
+        <NavItem text={'Home'} link="/"></NavItem>
+        <NavItem text={'Orders'} link="/"></NavItem>
+        <NavItem text={'Cart'} link="/cart"></NavItem>
       </ul>
     </nav>
   )
