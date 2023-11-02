@@ -1,5 +1,6 @@
 import Main from "./components/Main"
 import ProductList from "./components/ProductList"
+import Orders from "./components/Orders"
 import Cart from "./components/Cart"
 import NoPage from "./components/NoPage"
 
@@ -12,6 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Main />}>
           <Route index element={<ProductList />} />
+          <Route path="orders" element={<Orders />} />
           <Route path="cart" element={<Cart />} />
           <Route path="*" element={<NoPage />} />
         </Route>

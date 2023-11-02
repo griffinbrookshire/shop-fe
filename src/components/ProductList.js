@@ -5,7 +5,6 @@ export default function ProductList() {
   const [numItems, setNumItems] = useState(8)
 
   function ProductItem() {
-  
     return (
       <div className="max-w-xs m-4 flex flex-col bg-white hover:bg-gray-50 text-gray-700 rounded-xl p-8 shadow-lg">
         <img src="shirt.png" className="w-48 mx-auto"></img>
@@ -18,11 +17,10 @@ export default function ProductList() {
         </div>
       </div>
     )
-  
   }
 
   return (
-    <div className="w-full mx-auto pb-8 flex flex-wrap justify-center">
+    <div className="w-full mx-auto flex flex-wrap justify-center">
       {Array.from({length: numItems}, (v, i) => <ProductItem key={i}></ProductItem>)}
     </div>
   )
