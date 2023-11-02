@@ -16,10 +16,10 @@ export default function Orders() {
       return today.toLocaleDateString("en-US", options)
     }
     
-    function ItemDetails() {
+    function ItemDetails({itemQuantity}) {
       return (
         <div className='flex items-center'>
-          <OrderItemImage itemQuantity="2"></OrderItemImage>
+          <OrderItemImage itemQuantity={itemQuantity}></OrderItemImage>
           {expanded &&
             <>
               <div className='flex flex-col ml-4 text-gray-400 text-sm'>
@@ -28,8 +28,8 @@ export default function Orders() {
                 <p>Color: Black</p>
                 <p>Material: Cotton</p>
               </div>
-              <div className='flex flex-col mt-auto ml-12 leading-5 font-semibold'>
-                <p>$12.99</p>
+              <div className='flex flex-col mt-auto ml-12 leading-5'>
+                <p>$12.99 {itemQuantity > 1 && <span>each</span>}</p>
               </div>
             </>
           }
@@ -45,8 +45,8 @@ export default function Orders() {
           <div className={`w-6 h-6 flex justify-center items-center cursor-pointer transition-transform duration-250 ${expanded?'rotate-90':''}`} onClick={expandOrder}>
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" id="chevron"><path fill="none" stroke="#70a3f3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 13 6-6-6-6"></path></svg>
           </div>
-          <ItemDetails></ItemDetails>
-          <ItemDetails></ItemDetails>
+          <ItemDetails itemQuantity='1'></ItemDetails>
+          <ItemDetails itemQuantity='2'></ItemDetails>
           <ItemDetails></ItemDetails>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function Orders() {
     return (
       <div className="relative w-fit h-fit -ml-3">
         <img src="shirt.png" className="w-[50px] h-[70px] bg-gray-100 border border-gray-300 rounded-md"></img>
-        {itemQuantity &&
+        {itemQuantity && itemQuantity > 1 &&
           <span className="w-4 h-4 absolute -right-1 -bottom-1 flex justify-center items-center bg-gray-500 rounded-full text-white text-xs">{itemQuantity}</span>
         }
       </div>
@@ -68,11 +68,11 @@ export default function Orders() {
 
   return (
     <div className="w-3/4 min-w-[350px] max-w-[1250px] mx-auto card">
-      <h1 className="text-2xl mb-2 text-center">Your Orders</h1>
+      <h1 className="text-2xl mb-2 text-center">My Orders</h1>
       <div className="grid grid-cols-1 divide-y">
         <OrderDetails orderTotal="49.99"></OrderDetails>
-        <OrderDetails orderTotal="49.99"></OrderDetails>
-        <OrderDetails orderTotal="49.99"></OrderDetails>
+        <OrderDetails orderTotal="54.99"></OrderDetails>
+        <OrderDetails orderTotal="63.99"></OrderDetails>
       </div>
     </div>
   )

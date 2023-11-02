@@ -9,3 +9,10 @@
 .card {
   @apply text-gray-700 rounded-xl p-8 shadow-lg bg-white
 }
+
+.grid-auto-fill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  justify-content: space-evenly;
+  grid-gap: 2rem;
+}

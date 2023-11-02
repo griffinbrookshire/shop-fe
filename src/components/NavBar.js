@@ -2,10 +2,10 @@ export default function NavBar() {
 
   function Logo() {
     return (
-      <div className="flex items-center">
-        <img src="gear.png" alt="settings" className="w-12 h-12 hover:animate-spin"></img>
+      <a href="/" className="flex items-center cursor-pointer group">
+        <img src="gear.png" alt="settings" className="w-12 h-12 group-hover:animate-spin"></img>
         <span className="ml-2 hidden min-[825px]:inline font-serif">Items 'R' Us</span>
-      </div>
+      </a>
       
     )
   }
@@ -13,7 +13,7 @@ export default function NavBar() {
   function NavItem({text, link}) {
     return (
       <li>
-        <a href={link} className="hover:text-gray-100">{text}</a>
+        <a href={link} className="hover:underline">{text}</a>
       </li>
     )
   }

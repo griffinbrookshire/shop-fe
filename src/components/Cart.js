@@ -5,7 +5,7 @@ export default function Cart() {
   const totalPrice = 49.99
   const shippingPrice = 8.99
   const taxPrice = 4.99
-  const [orderTotal, setOrderTotal] = useState(Math.floor((totalPrice + shippingPrice + taxPrice) * 100) / 100)
+  const [orderTotal, setOrderTotal] = useState(Math.ceil((totalPrice + shippingPrice + taxPrice) * 100) / 100)
 
   function CartItem() {
 
@@ -16,8 +16,8 @@ export default function Cart() {
 
     function calcPrice(event) {
       let quantity = event.target.value
-      setItemTotal(Math.floor(itemPrice*quantity * 100) / 100)
-      setOrderTotal(Math.floor((totalPrice + shippingPrice + taxPrice) * 100) / 100)
+      setItemTotal(Math.ceil(itemPrice*quantity * 100) / 100)
+      setOrderTotal(Math.ceil((totalPrice + shippingPrice + taxPrice) * 100) / 100)
     }
 
     return (
@@ -39,7 +39,7 @@ export default function Cart() {
             <input type="number" defaultValue={quantity} min={1} className="w-12 h-8 pl-2 pr-1 border-gray-300 border rounded-lg" onChange={calcPrice}></input>
           </div>
           <div className="flex items-end h-8 space-x-2">
-              <span>Total:</span><span>${itemTotal}</span>
+              <span>Total:</span><span>${itemTotal.toFixed(2)}</span>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function Cart() {
     return (
       <div className="flex justify-between py-1">
         <span>{title}:</span>
-        <span>${value}</span>
+        <span>${value.toFixed(2)}</span>
       </div>
     )
   }
@@ -74,7 +74,7 @@ export default function Cart() {
           <SummaryLineItem title="Tax" value={taxPrice}></SummaryLineItem>
           <div className="flex justify-between py-2 font-bold">
             <span>Order Total:</span>
-            <span>${orderTotal}</span>
+            <span>${orderTotal.toFixed(2)}</span>
           </div>
         </div>
         <button className="w-40 h-10 mt-8 mx-auto bg-blue-400 text-lg text-white rounded-xl">Checkout</button>
