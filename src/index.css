@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .background {
-  @apply bg-gray-600
+  @apply bg-gray-100
+}
+
+.card {
+  @apply text-gray-700 rounded-xl p-8 shadow-lg bg-white
 }
