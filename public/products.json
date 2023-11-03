@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Super Sick T-Shirt",
+    "price": 12.99,
+    "description": "This t-shirt is totally wicked and looks super rad with a nice pair of loafers",
+    "image": "shirt.png"
+  },
+  {
+    "name": "Super Sick Hoodie",
+    "price": 12.99,
+    "description": "This t-shirt is totally wicked and looks super rad with a nice pair of loafers",
+    "image": "shirt.png"
+  },
+  {
+    "name": "Super Sick Sweater",
+    "price": 12.99,
+    "description": "This t-shirt is totally wicked and looks super rad with a nice pair of loafers",
+    "image": "shirt.png"
+  },
+  {
+    "name": "Super Sick Cardigan",
+    "price": 12.99,
+    "description": "This t-shirt is totally wicked and looks super rad with a nice pair of loafers",
+    "image": "shirt.png"
+  },
+  {
+    "name": "Super Sick Flannel",
+    "price": 12.99,
+    "description": "This t-shirt is totally wicked and looks super rad with a nice pair of loafers",
+    "image": "shirt.png"
+  },
+  {
+    "name": "Super Sick Button Up",
+    "price": 12.99,
+    "description": "This t-shirt is totally wicked and looks super rad with a nice pair of loafers",
+    "image": "shirt.png"
+  },
+  {
+    "name": "Super Sick Jacket",
+    "price": 12.99,
+    "description": "This t-shirt is totally wicked and looks super rad with a nice pair of loafers",
+    "image": "shirt.png"
+  },
+  {
+    "name": "Super Sick Pullover",
+    "price": 12.99,
+    "description": "This t-shirt is totally wicked and looks super rad with a nice pair of loafers",
+    "image": "shirt.png"
+  },
+  {
+    "name": "Super Sick V-Neck",
+    "price": 12.99,
+    "description": "This t-shirt is totally wicked and looks super rad with a nice pair of loafers",
+    "image": "shirt.png"
+  },
+  {
+    "name": "Super Sick Cut Off",
+    "price": 12.99,
+    "description": "This t-shirt is totally wicked and looks super rad with a nice pair of loafers",
+    "image": "shirt.png"
+  }
+]

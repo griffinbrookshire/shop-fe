@@ -1,0 +1,76 @@
+[
+  {
+    "orderPrice": 25.98,
+    "orderTimestamp": "September 20, 2019",
+    "items": [
+      {
+        "name": "Super Sick T-Shirt",
+        "price": 12.99,
+        "quantity": 2,
+        "options": {
+          "Size": "L",
+          "Color": "Black",
+          "Material": "Cotton"
+        }
+      },
+      {
+        "name": "Super Sick Hoodie",
+        "price": 12.99,
+        "quantity": 1,
+        "options": {
+          "Size": "M",
+          "Color": "Black",
+          "Material": "Cotton"
+        }
+      }
+    ]
+  },
+  {
+    "orderPrice": 25.98,
+    "orderTimestamp": "September 20, 2019",
+    "items": [
+      {
+        "name": "Super Sick Sweater",
+        "price": 12.99,
+        "quantity": 2,
+        "options": {
+          "Size": "L",
+          "Color": "Black",
+          "Material": "Cotton"
+        }
+      }
+    ]
+  },
+  {
+    "orderPrice": 25.98,
+    "orderTimestamp": "September 20, 2019",
+    "items": [
+      {
+        "name": "Super Sick Long Sleeve",
+        "price": 12.99,
+        "quantity": 2,
+        "options": {
+          "Size": "L",
+          "Color": "Black",
+          "Material": "Cotton"
+        }
+      }
+    ]
+  },
+  {
+    "orderPrice": 25.98,
+    "orderTimestamp": "September 20, 2019",
+    "items": [
+      {
+        "name": "Super Sick Cardigan",
+        "price": 12.99,
+        "quantity": 2,
+        "options": {
+          "Size": "L",
+          "Color": "Black",
+          "Material": "Cotton"
+        }
+      }
+    ]
+  }
+]
