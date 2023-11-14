@@ -2,6 +2,7 @@ import Main from "./components/Main"
 import ProductList from "./components/ProductList"
 import Orders from "./components/Orders"
 import Cart from "./components/Cart"
+import Product from "./components/product/Product"
 import NoPage from "./components/NoPage"
 
 import { useEffect, useState } from "react"
@@ -25,10 +26,11 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main products={products} />}>
+        <Route path="/" element={<Main products={products} />} >
           <Route index element={<ProductList products={products} />} />
           <Route path="orders" element={<Orders />} />
           <Route path="cart" element={<Cart />} />
+          <Route path=":id" element={<Product />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

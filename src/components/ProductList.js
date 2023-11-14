@@ -2,9 +2,9 @@ export default function ProductList({products}) {
 
   function ProductListItem({product}) {
     return (
-      <div className="w-[320px] flex flex-col bg-white hover:bg-gray-50 text-gray-700 rounded-xl p-8 shadow-lg hover:cursor-pointer">
+      <a href={`/${product.id}`} className="w-[320px] flex flex-col bg-white hover:bg-gray-50 text-gray-700 rounded-xl p-8 shadow-lg hover:cursor-pointer">
         <div className='w-48 mx-auto'>
-          <img src={product.image} className="w-full" alt='product'></img>
+          <img src={product.images[0]} className="w-full" alt='product'></img>
         </div>
         <div className="flex">
           <div className="flex flex-col">
@@ -13,7 +13,7 @@ export default function ProductList({products}) {
           </div>
           <span className="ml-8 font-semibold">${product.price}</span>
         </div>
-      </div>
+      </a>
     )
   }
 
